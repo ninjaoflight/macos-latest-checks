@@ -25,10 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-
-      # print the contents of sqlite3.h
-     - name: print sqlite3.h
+      # print contents of sqlite3.h
+      - name: print sqlite3.h
         run: |
           cd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           cat sqlite3.h
-
