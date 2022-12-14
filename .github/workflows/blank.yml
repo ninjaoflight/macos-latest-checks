@@ -30,3 +30,10 @@ jobs:
         run: |
           cd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           cat sqlite3.h
+
+      # upload sqlite3.h as artifact
+      - name: upload sqlite3.h
+        uses: actions/upload-artifact@v2
+        with:
+          name: sqlite3.h
+          path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sqlite3.h
